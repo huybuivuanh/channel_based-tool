@@ -1,0 +1,211 @@
+/* message container css */
+.message-container {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 0px 10px 10px 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative; /* Added for positioning the reply lines */
+}
+
+.message-container > div {
+  margin-top: 10px;
+}
+
+.message-container p {
+  margin: 0;
+}
+
+.message-container .reply-container {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 20px; /* Increased margin for better indentation */
+  position: relative; /* Added for positioning the reply lines */
+}
+
+.reply-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 10px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.author-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author {
+  font-weight: bold;
+  /* margin-bottom: 5px;
+  margin-top: 0px; */
+  margin: 0px 0px 0px 0px;
+}
+
+.message {
+  padding-bottom: 5px;
+}
+
+.message-image {
+  padding-bottom: 10px;
+}
+
+.time {
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.author {
+  order: -1;
+}
+
+/* add message button */
+.add-message-button {
+  background-color: #fff;
+  color: #0074d9;
+  border: 2px solid #0074d9;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-message-button:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+/* AddMessageForm css */
+
+.add-message-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.add-message-form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-message-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.add-message-form input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-message-form input[type="date"] {
+  width: 95%;
+}
+
+.add-message-form textarea {
+  width: 98%;
+  height: 100px;
+}
+
+.add-message-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.add-message-form button:last-child {
+  margin-right: 0;
+}
+
+.cancelButton {
+  float: right;
+}
+
+.add-message-form button:hover {
+  background-color: #0056b3;
+}
+
+.comment-image {
+  width: 200px;
+  height: 100px;
+}
+
+/* Message Actions */
+.message-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.message-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.message-actions-2 button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.message-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* search bar */
+
+.search-bar-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.message-search-dropdown {
+  padding: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-left: 10px; /* Adjust the margin as needed */
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  db:
+    networks:
+      - mynetwork
+    image: mysql
+    container_name: db
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: "Huyvailuyen123"
+    ports:
+      - "3307:3306"
+    expose:
+      - "3306"
+    volumes:
+      - db:/var/lib/mysql
+
+  react1:
+    networks:
+      - mynetwork
+    build: ./client
+    container_name: r1
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+
+  datastore1:
+    networks:
+      - mynetwork
+    depends_on:
+      - db
+    build: ./server
+    restart: unless-stopped
+    container_name: ds1
+    ports:
+      - "8080:8080"
+    volumes:
+      - ds:/app
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  db:
+  ds:

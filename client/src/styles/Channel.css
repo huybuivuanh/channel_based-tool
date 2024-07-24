@@ -1,0 +1,222 @@
+/* ChannelList */
+.container {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #dfe6e9;
+  text-align: center;
+  gap: 20px;
+}
+
+.add-channel-button {
+  background-color: #fff;
+  color: #0074d9;
+  border: 2px solid #0074d9;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-channel-button:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+}
+
+/* Channel.css */
+
+.channel-card {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.channel-card-container {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.channel-card-top {
+  background-color: #00cec9;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channel-card-name {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.channel-card img {
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 260px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.channel-card-bottom {
+  margin-top: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-card-buttons {
+  margin-top: auto;
+}
+
+.channel-card-info {
+  margin: 10px 0;
+  color: #333;
+}
+
+.channel-card-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.channel-card-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-card-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+.delete-card-button:hover {
+  background-color: #0056b3;
+}
+
+.channel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/* AddChannelForm css */
+
+.add-channel-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.add-channel-form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-channel-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.add-channel-form input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-channel-form input[type="date"] {
+  width: 95%;
+}
+
+.add-channel-form textarea {
+  width: 98%;
+  height: 100px;
+}
+
+.add-channel-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.add-channel-form button:last-child {
+  margin-right: 0;
+}
+
+.cancelButton {
+  float: right;
+}
+
+.add-channel-form button:hover {
+  background-color: #0056b3;
+}
+
+/* search bar */
+
+.search-bar-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.channel-search-dropdown {
+  padding: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-left: 10px; /* Adjust the margin as needed */
+  cursor: pointer;
+}
+
+.sort-dropdown {
+  padding: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-left: 10px; /* Adjust the margin as needed */
+  cursor: pointer;
+  height: 42px;
+  margin-top: 20px;
+}
